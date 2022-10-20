@@ -1,0 +1,42 @@
+.cart {
+  position: relative;
+  width: 400px;
+  background-color: #333;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+  padding: 40px 30px;
+}
+
+.cart__bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cart__bar h4 {
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.cart__bar button {
+  background-color: lightgreen;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 0;
+  padding: 14px 30px;
+  width: 100%;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.35);
+
+  transition: opacity 0.2s ease-in-out;
+}
+
+.cart__bar button:hover {
+  opacity: 0.8;
+}

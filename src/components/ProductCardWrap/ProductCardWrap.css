@@ -1,0 +1,157 @@
+.product-card {
+  border: 2px solid #cecece;
+  padding: 10px;
+  display: flex;
+  max-width: 700px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.product-card.lg img {
+  width: 200px;
+  height: 200px;
+}
+
+.product-card.sm img {
+  width: 60px;
+  height: 60px;
+}
+
+.product-card.lg:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+.product-card.sm:not(:last-of-type) {
+  margin-bottom: 14px;
+}
+
+.product-card .cont {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.product-card.lg .cont {
+  margin-left: 20px;
+  padding: 20px 0;
+}
+
+.product-card.sm .cont {
+  margin-left: 8px;
+  padding: 2px 0;
+}
+
+.product-card h3 {
+  font-weight: 400;
+}
+
+.product-card.lg h3 {
+  font-size: 30px;
+}
+
+.product-card.sm h3 {
+  font-size: 16px;
+}
+
+.product-card__price {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.product-card.lg .product-card__price {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.product-card.sm .product-card__price {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.product-card__stock {
+  font-weight: 300;
+}
+
+.product-card.lg .product-card__stock {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.product-card.sm .product-card__stock {
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+.cart-product-card__info {
+  border: 1px solid #cecece;
+  margin-top: 10px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.cart-product-card__info h4 {
+  font-weight: 400;
+  padding: 6px 8px;
+  font-size: 14px;
+}
+.cart-product-card__info h4:first-of-type {
+  border-bottom: 1px solid #cecece;
+}
+
+.product-card__actions {
+  display: flex;
+}
+
+.product-card.lg .product-card__actions {
+  margin-top: 30px;
+}
+
+.product-card.sm .product-card__actions {
+  margin-top: 15px;
+}
+
+.product-card__actions svg {
+  max-width: 18px;
+  max-height: 18px;
+  opacity: 0.8;
+}
+
+.product-card button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background-color: #cecece;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.35);
+  border-radius: 3px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.product-card button:hover {
+  opacity: 0.8;
+}
+
+.product-card.lg button {
+  height: 40px;
+  width: 120px;
+}
+
+.product-card.sm button {
+  height: 35px;
+  width: 35px;
+}
+
+.product-card.lg button:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.product-card.sm button:not(:last-of-type) {
+  margin-right: 8px;
+}
